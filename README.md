@@ -1,10 +1,11 @@
 
-<h3 align="center"> Learning to Plan for Retrieval-Augmented Large Language Models from
-Knowledge Graphs </h3>
+# Learning to Plan for Retrieval-Augmented Large Language Models from Knowledge Graphs
+- [Learning to Plan for Retrieval-Augmented Large Language Models from Knowledge Graphs](https://arxiv.org/abs/2406.14282)
 
+## 🌈 Overview of LPKG Framework
 ![image.png](./figure/overview.png)
 
-## How to start
+## 💻 How to start
 ```
 git clone https://github.com/zjukg/LPKG.git
 ```
@@ -55,4 +56,19 @@ wget https://dl.fbaipublicfiles.com/contriever/embeddings/contriever-msmarco/wik
 ```
 cd parser
 python parse_result.py
+```
+
+## 🤝 Cite:
+Please consider citing this paper if you find our work useful.
+
+```bigquery
+
+@misc{wang2024learning,
+      title={Learning to Plan for Retrieval-Augmented Large Language Models from Knowledge Graphs}, 
+      author={Junjie Wang and Mingyang Chen and Binbin Hu and Dan Yang and Ziqi Liu and Yue Shen and Peng Wei and Zhiqiang Zhang and Jinjie Gu and Jun Zhou and Jeff Z. Pan and Wen Zhang and Huajun Chen},
+      year={2024},
+      eprint={2406.14282},
+      archivePrefix={arXiv}
+}
+
 ```
