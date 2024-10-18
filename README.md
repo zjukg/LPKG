@@ -12,7 +12,7 @@ git clone https://github.com/zjukg/LPKG.git
 ### 1.Finetuning on KG-sourced planning data
 The code of fine-tuning is constructed based on open-sourced repo [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory).
 
-1. Download our KG-sourced planning data from our [Huggingface repo](https://huggingface.co/datasets/WJJ-ZJU/CLQA_Wiki).
+1. Download our KG-sourced planning data from our [Huggingface repo](https://huggingface.co/datasets/zjukg/LPKG).
 2. Put the downloaded `kg_supervise.json` file under `fine-tuning/data/` directory. 
 3. Make sure you have downloaded the base model (Llama-3-8B-Instruct or CodeQwen1.5-7B-Chat). Fill in your base model directory `BASE_MODEL_DIR`, output directory `OUTPUT_DIR` in the `fine-tuning/run_exp_llama.sh`,`fine-tuning/run_exp_qwen.sh`. 
 
