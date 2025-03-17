@@ -57,6 +57,8 @@ wget https://dl.fbaipublicfiles.com/contriever/embeddings/contriever-msmarco/wik
 cd parser
 python parse_result.py
 ```
+### 4.Evaluation
+The evaluation code of each dataset can be found in `parser/qa_eval.ipynb`. Please fill in the path of parse result file(a `.csv` file) and corresponding qa data file(like `../fine-tuning/data/2wikimqa_500.json`) in `qa_eval.ipynb` to run correctly.
 
 ## 🤝 Cite:
 Please consider citing this paper if you find our work useful.

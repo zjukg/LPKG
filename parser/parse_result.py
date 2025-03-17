@@ -526,16 +526,20 @@ def write_to_csv_with_headers(filename, data, headers, mode='w'):
             writer.writerow(headers)
         writer.writerows(data)
 
-plan_result  = '' # Your planning result (a jsonl file, each line represents a planning result)
+plan_result  = 'YOUR_PLANNING_RESULT' # Your planning result (a jsonl file, each line represents a planning result)
 plan = []
 question = []
 labels = []
 with open(plan_result,'r',encoding='utf-8') as f:
-    for line in f:
+    for idx,line in enumerate(f):
         d = json.loads(line.strip())
         plan.append(d['predict'])
-        question.append(d['question'])
         labels.append(d['label'])
+
+raw_qa_json = '../fine-tuning/data/hotpotqa_500.json' # '../fine-tuning/data/musique_500.json' | '../fine-tuning/data/2wikimqa_500.json' | '../fine-tuning/data/bamboogle.json' | '../fine-tuning/data/hotpotqa_500.json' | '../CLQA_Wiki/CLQA_Wiki_v1.json'
+raw_qa = json.load(open(raw_qa_json,'r'))
+for i in range(len(raw_qa)):
+    question.append(raw_qa[i]['question'])
 # import pdb;pdb.set_trace()
 l = len(question)
 results = []
